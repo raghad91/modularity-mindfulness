@@ -18,10 +18,174 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 1rem 1rem .5rem;
 }
 
 img {
   display: block;
   width: 100%;
 }
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+nav a {
+  color: #3783a3;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0 1rem 1.3rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+}
+
+.intro {
+  text-align: center;
+  padding: 1rem 1rem 2.5rem;
+  border-top: .2rem solid #e2e2e2;
+  border-bottom: .2rem solid #e2e2e2;
+}
+
+.intro > p:first-child {
+  font-size: 2rem;
+}
+
+intro p {
+  margin: 0;
+}
+
+div {
+  margin: 1.5rem 0;
+  padding: 1rem 1rem 1.7rem;
+  text-align: center;
+}
+
+div p {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 2rem 0 1rem;
+}
+
+article a {
+  border: .2rem solid #3783a3;
+  border-radius: .3rem;
+  padding: .5em 1em .6em;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: .7em;
+  border-top: .2rem solid #e2e2e2;
+  font-size: .8rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: .8rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  body {
+    margin: 1rem;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 1rem 1rem;
+  }
+
+  section p {
+    flex-grow: 1;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+  }
+
+  span {
+    text-align: left;
+  }
+
+  #gravel {
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    display: contents;
+  }
+
+  .banner {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  article {
+   display: grid;
+ }
+
+  div {
+    display: block;
+    width: 80%;
+    align-items: center;
+    margin: 1.5rem auto;
+  }
+
+  nav li {
+    margin-bottom: 0;
+  }
+
+  nav ul {
+    margin-left: 15rem;
+  }
+
+  section li {
+    padding: 0;
+    margin: 0;
+  }
+
+  @media only screen and (min-width: 60em) {
+
+    header {
+      grid-template-columns: 1.5fr .5fr;
+    }
+
+    .intro {
+      width: 50%;
+    }
